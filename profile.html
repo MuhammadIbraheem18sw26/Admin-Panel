@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <!-- CKEditor -->
+    <script src="https://cdn.ckeditor.com/4.16.0/standard/ckeditor.js"></script>
+
+    <!-- Font Awesome  -->
+    <script
+      src="https://kit.fontawesome.com/1e48eb6b44.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>profile</title>
+  </head>
+  <body>
+    <!-- Navigation Section Start  -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <div class="container">
+        <a href="index.html" class="navbar-brand">Blogen</a>
+        <button
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#navMenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navMenu" class="collapse navbar-collapse">
+          <ul class="navbar-nav justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link active" href="./index.html">DashBoard</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./users.html">Users</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./posts.html">Posts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./category.html">Category</a>
+            </li>
+          </ul>
+
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+              <a
+                href=""
+                class="nav-link dropdown-toggle"
+                data-toggle="dropdown"
+              >
+                <i class="fas fa-user"> Welcome Ibrahim</i>
+              </a>
+              <div class="dropdown-menu">
+                <a href="" class="dropdown-item">
+                  <i class="fas fa-user-circle"> Profile</i>
+                </a>
+                <a href="" class="dropdown-item">
+                  <i class="fas fa-cog"> settings</i>
+                </a>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a href="" class="nav-link">
+                <i class="fas fa-user-times"></i> Logout
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navigation Section ends -->
+
+    <!-- Header Section Start  -->
+    <section id="header-section" class="bg-primary text-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h1 class="display-4 py-2">
+              <i class="fas fa-user"></i>
+              Edit profile
+            </h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Header Sectio End -->
+    <!-- Button  Section Start -->
+    <section id="action-section  bg-light">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-md-3 mb-2">
+            <a href="index.html" class="btn btn-light text-dark btn-block"
+              ><i class="fas fa-arrow-left"></i> back to dashbord</a
+            >
+          </div>
+
+          <div class="col-md-3 mb-2">
+            <a href="" class="btn btn-success btn-block"
+              ><i class="fas fa-check"></i> Save changes</a
+            >
+          </div>
+
+          <div class="col-md-3">
+            <a href="" class="btn btn-danger btn-block"
+              ><i class="fas fa-trash"></i> Delete Account</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Button Section ends -->
+
+    <!-- Edit section Starts -->
+    <section id="edit">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-9">
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">Edit post</h3>
+              </div>
+              <div class="card-body">
+                <div class="form-group">
+                  <label for="">Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Muhammad Ibrahim"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="ibrahimjhullan12@gmail.com"
+                  />
+                  <small id="emailHelpId" class="form-text text-muted"
+                    >"Example:abc@gmail.com"</small
+                  >
+                </div>
+                <div class="form-group">
+                  <label for="body">Bio</label>
+                  <textarea name="editor1"></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card">
+              <h4 class="m-2">Profile Picture</h4>
+              <img
+                class="card-img-top p-2 img-fluid d-block"
+                src="picture.jpeg"
+                alt="Muhammad Ibraheem"
+              />
+
+              <div class="card-body">
+                <button class="btn btn-primary btn-block">Edit Image</button>
+                <button class="btn btn-danger btn-block">Delete Image</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="py-3 bg-dark">
+      <div class="container">
+        <div class="row text-white">
+          <div class="col text-center">
+            <p>Copyrights &copy; 2021 @M.Ibraheem</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      CKEDITOR.replace("editor1");
+    </script>
+  </body>
+</html>
